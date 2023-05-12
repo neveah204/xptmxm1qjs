@@ -1,42 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Test_004 : MonoBehaviour
 {
-    public int hp = 180;
-    public Text textUI;
-    public Text hpTextUI;
-
-    // Start is called before the first frame update
+    public int herbNum = 1;                    //정수 herbNum 선언 후에 1을 입력 (Public 추가 , 인스창에서 보여주기해서 선언)
     void Start()
     {
-                    
-    }
+       
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-            hp += 10;
-        if (Input.GetMouseButtonDown(1))
-            hp -= 10;
-
-
-
-        if (hp <= 50)
-            textUI.text = "도망";
-        //Debug.Log("도망");
-        else if (hp >= 200)
-            textUI.text = "공격";
-        //Debug.Log("공격");
+        if(herbNum == 1)                    //조건식 herbNum 이 1일 경우 안에 로직을 실행한다.
+        { 
+            Debug.Log("체력을 50 회복");    //Console.log 창에 조건이 만족될 경우 해당 내용을 표시한다.  
+        }
         else
-            textUI.text = "방어";
-        //Debug.Log("방어");
+        {
+            Debug.Log("체력을 -50 ");       //Console.log 창에 조건이 만족될 경우 해당 내용을 표시한다.
+        }
+    }    
 
-        hpTextUI.text = "HP : " + hp.ToString();            //Tostring = 정수를 문자로 변환 (HP -> 숫자)
-    }
-
-   
 }

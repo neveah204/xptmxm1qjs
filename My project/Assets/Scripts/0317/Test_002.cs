@@ -7,31 +7,21 @@ public class Test_002 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int answer;                     //int = 정수 answer를 생성함
-        answer = 1 + 2;
-        Debug.Log(answer);
+        int answer;         //변수 int answer 선언
+        answer = 1 + 2;     //answer에 1+2 값 입력
+        Debug.Log(answer);  //Console.log()answer 값을 보여줌
 
-        int n1 = 8;                     //int n1을 생성 하고 값 입력
-        int n2 = 9;
-        int answer2;
-        answer2 = n1 + n2;
-        Debug.Log(answer2);
+        int n1 = 8;         //변수 int 선언 이름은 n1이고 8의 값을 입력
+        int n2 = 9;         //변수 int 선언 이름은 n2이고 9의 값을 입력
+        int answer2;        //변수 int anwer2 선언 (기존에 anwer 선언 되어있어서 다시 선언)
+        answer2 = n1 + n2;  //answer2에 변수 n1 값과 n2 값의 더한 값을 입력
+        Debug.Log(answer2);  //Console.log()answer2 값을 보여줌
 
-        int answer3 = 10;               // answer3를 만들고 값을 지정함
-        answer3 += 5;                   // += 는 앞의 값에 n (5)를 더함 (answer3 += 5)
-        Debug.Log(answer3);
-        answer3++;                      // ++ 는 1을 더하는 명령어
-        Debug.Log(answer3);
+        answer2 += 5;       //answer2=answer2+5의 축약
+        Debug.Log(answer2); //Console.log() answer2값을 보여줌
 
-        string str = "Happy ";          // 문자 값 string으로 str 생성하고 지정
-        string str2 = "birthday";
-
-        str += str2;                    // 문자열은 +=로 주로 병함함
-        Debug.Log(str);
-
-        string messege = str + answer3;         // 문자열 messege 생성하고 더했음
-        Debug.Log(messege);
-
+        answer2++;          //answer2 = answer2 + 1의 축약 보통 반복문에서 1씩 더해서 처리할때 쓰임
+        Debug.Log(answer2); //Console.log()answer2 값을 보여줌
 
     }
 
